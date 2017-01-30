@@ -18,7 +18,7 @@ Here You will Find My Daily Practices With DS & ALGO In Java.
 <li>Graphs</li>
 </ul>
 
-<p>Sorting & Searching Algorithm</p>
+<b>Sorting & Searching Algorithm</b>
 <ul>
 <li>Bubble Sort</li>
 <li>Selection Sort</li>
