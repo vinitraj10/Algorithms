@@ -1,5 +1,5 @@
 public class List{
-	public static class ListNode{
+	static class ListNode{
 		int data;
 		ListNode next;
 	}
