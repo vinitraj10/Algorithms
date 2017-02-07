@@ -1,4 +1,7 @@
-If You Find any Error in any of my Source code Please create a pull request 
+<h1>If You Find any Error in any of my Source code Please create a pull request 😐 </h1>
+<b>Compilation an Running Commands:-</b><br />
+<h2>javac xyz.java</h2>
+<h2>java xyz</h2>
 # Data-Structures-Algorithm-With-Java
 
 Here You will Find My Daily Practices With DS & ALGO In Java.
