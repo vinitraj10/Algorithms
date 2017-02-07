@@ -1,7 +1,7 @@
-<h1>Please Create A PR If You Find Any Error in My codes! 😊 </h1>
-<b>Compilation an Running Commands:-</b><br />
-<h2>javac xyz.java</h2>
-<h2>java xyz</h2>
+<p>Please Create an issue if you find Something Wrong with my codes 😊</p>
+<b>For compilation</b>
+<pre><p>javac xyz.java<br/>
+java xyz</p></pre>
 # Data-Structures-Algorithm-With-Java
 
 Here You will Find My Daily Practices With DS & ALGO In Java.
