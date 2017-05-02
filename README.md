@@ -1,8 +1,8 @@
 <p>Please Create an issue if you find Something Wrong with my codes 😊</p>
-<b>For compilation</b>
+<b>For compilation In java:-</b>
 <pre><p>javac xyz.java<br/>
 java xyz</p><hr>
--------------------
+<h3>In Python:-</h3>
 <p>python xyz.py</p>
 </pre>
 # Data-Structures & Algorithm
