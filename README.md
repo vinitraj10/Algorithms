@@ -1,10 +1,13 @@
 <p>Please Create an issue if you find Something Wrong with my codes 😊</p>
 <b>For compilation</b>
 <pre><p>javac xyz.java<br/>
-java xyz</p></pre>
-# Data-Structures-Algorithm-With-Java
+java xyz</p><hr>
+-------------------
+<p>python xyz.py</p>
+</pre>
+# Data-Structures & Algorithm
 
-Here You will Find My Daily Practices With DS & ALGO In Java.
+Here You will Find My Daily Practices With data structures and algorithm
 
 <p>Implementation Of DS and Algorithm</p>
 
