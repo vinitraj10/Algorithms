@@ -1,7 +1,7 @@
 class Stack:
 	def __init__(self):
 		self.items=[]
-	def size(slef):
+	def size(self):
 		return len(self.items)
 	def push(self,item):
 		return self.items.append(item)
@@ -11,6 +11,9 @@ class Stack:
 		return self.items == []
 	def __str__(self):
 		return str(self.items)
+	def __getitem__(self,index):
+    	return self.items[index]    #This function Helps us to make this object accesible from its index..
+
 
 
 '''
