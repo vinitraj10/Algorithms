@@ -24,7 +24,7 @@ b.next=c
 c.next=a
 
 item =a
-while item is not None:
+while True:
 	print(item.value)
 	item=item.next
 	if item is a:
