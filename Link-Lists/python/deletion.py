@@ -12,7 +12,7 @@ def show(head):
 			print(item.value)
 		item=item.next
 
-def delete(head,d,N):
+def delete(head,d):
 	if d==1:
 		item=head
 		head=item.next
@@ -47,5 +47,5 @@ while N>1:
 
 print('Enter the Node No you want to delete:\n')
 d=int(input())
-x=delete(p,d,N) #Returns new head after deletion
+x=delete(p,d) #Returns new head after deletion
 show(x)
