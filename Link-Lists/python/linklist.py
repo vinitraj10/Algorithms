@@ -6,6 +6,15 @@ class Node:
 class LinkedList:
 	def __init__(self):
 		self.head=None
+	def printlist(self):
+		item=self.head
+		while item is not None:
+			if item.next is None:
+				print(item.data)
+			else:
+				print(item.data,end='->')
+			item=item.next
+
 
 llist=LinkedList()
 llist.head=Node(1)
@@ -15,10 +24,4 @@ llist.head.next=a
 a.next=b
 
 if __name__=='__main__':
-	item=llist.head
-	while item is not None:
-		if item.next is None:
-			print(item.data)
-		else:
-			print(item.data,end='->')
-		item=item.next
+	llist.printlist()
