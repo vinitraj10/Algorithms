@@ -18,6 +18,19 @@ class LinkList:
 		item=Node(val)
 		item.next=self.head
 		self.head=item
+	def insertEnd(self,val):
+		item=Node(val)
+		p=self.head
+		while p.next is not None:
+			p=p.next
+		p.next=item
+	def insertAfter(self,n,val): # n is the number of node fter which we want to add the new node
+		p=self.head
+		item=Node(val)
+		for i in range(n-1):
+			p=p.next
+		item.next=p.next
+		p.next=item
 
 '''def show(head):
 	item=head
@@ -73,9 +86,23 @@ if __name__=='__main__':
 	llist.show()
 	llist.insertFront(5)
 	llist.show()
-	llist.insertFront(6)
+	llist.insertEnd(6)
 	llist.show()
 	llist.insertFront(7)
 	llist.show()
-	llist.insertFront(8)
+	llist.insertEnd(8)
+	llist.show()
+	llist.insertFront(1)
+	llist.show()
+	llist.insertEnd(2)
+	llist.show()
+	llist.insertFront(3)
+	llist.show()
+	llist.insertAfter(7,14)
+	llist.show()
+	llist.insertAfter(8,11)
+	llist.show()
+	llist.insertAfter(5,9)
+	llist.show()
+	llist.insertAfter(3,67)
 	llist.show()
