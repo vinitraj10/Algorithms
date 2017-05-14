@@ -1,9 +1,25 @@
 class Node:
-	def __init__(self,value):
-		self.value=value
+	def __init__(self,data):
+		self.data=data
 		self.next=None
 
-def show(head):
+class LinkList:
+	def __init__(self):
+		self.head=None
+	def show(self):
+		item=self.head
+		while item is not None:
+			if item.next is not None:
+				print(item.data,end='->')
+			else:
+				print(item.data)
+			item=item.next
+	def insertFront(self,val):
+		item=Node(val)
+		item.next=self.head
+		self.head=item
+
+'''def show(head):
 	item=head
 	while item is not None:
 		if item.next is not None:
@@ -45,4 +61,21 @@ while N>1:
 print('Enter the Node No Where you want to insert:\n')
 d=int(input())
 x=insert(p,d) #Returns new head after deletion
-show(x)
+show(x)'''
+
+if __name__=='__main__':
+	llist=LinkList()
+	llist.head=Node(1)
+	a=Node(2)
+	b=Node(3)
+	llist.head.next=a
+	a.next=b
+	llist.show()
+	llist.insertFront(5)
+	llist.show()
+	llist.insertFront(6)
+	llist.show()
+	llist.insertFront(7)
+	llist.show()
+	llist.insertFront(8)
+	llist.show()
