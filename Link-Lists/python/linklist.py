@@ -1,35 +1,24 @@
 class Node:
-	def __init__(self,value):
-		self.value=value
-		self.nextnode=None
+	def __init__(self,data):
+		self.data=data
+		self.next=None
 
+class LinkedList:
+	def __init__(self):
+		self.head=None
 
+llist=LinkedList()
+llist.head=Node(1)
+a=Node(2)
+b=Node(3)
+llist.head.next=a
+a.next=b
 
-#Creating Nodes:-
-a=Node(1)
-b=Node(2)
-c=Node(3)
-#Now connecting those nodes by giving address of nextnode
-
-a.nextnode=b
-b.nextnode=c
-
-'''
-a->b->c->None
-
-
-
-'''
-print('Normal way to print')
-print(a.value)
-print(a.nextnode.value)
-print(a.nextnode.nextnode.value)
-
-print('------------------')
-
-print('By using loop:-')
-
-item=a
-while item is not None:
-	print(item.value,end=' ')
-	item=item.nextnode
+if __name__=='__main__':
+	item=llist.head
+	while item is not None:
+		if item.next is None:
+			print(item.data)
+		else:
+			print(item.data,end='->')
+		item=item.next
