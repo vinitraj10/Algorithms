@@ -27,17 +27,19 @@ class BinaryTree:
 		self.key=root
 	def __str__(self):
 		return str(self.key)
+Add=0
+def Sum(root):
+	global Add
+	if not root :
+		return
+	Add=Add+root.key
+	Sum(root.leftChild)
+	Sum(root.rightChild)
+	return Add 
+	
 
-
-r=BinaryTree(1)
-print(r.getRootVal())
-print(r.getLeftChild())
-r.insertLeft(2)
-print(r.getRightChild())
-r.insertRight(3)
-print(r.getRightChild())
-r.insertRight(7)
-print(r.getRightChild())
-print(r.getRightChild().getRightChild())
-
-
+root=BinaryTree(1)
+root.insertLeft(2)
+root.insertLeft(4)
+root.insertRight(3)
+print(Sum(root))
