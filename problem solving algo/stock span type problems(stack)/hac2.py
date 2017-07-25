@@ -6,7 +6,7 @@ Simmilar-to: https://www.hackerearth.com/practice/data-structures/stacks/basics-
 This problem is based on stock-span problem,it is quite similar to it.
 This is the solution of The Amazing Race at hackerearth.com
 
-
+In this problem we have applied stock span algo from both the sides.
 '''
 
 

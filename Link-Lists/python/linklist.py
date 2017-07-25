@@ -6,7 +6,7 @@ class Node:
 class LinkedList:
 	def __init__(self):
 		self.head=None
-	def printlist(self):
+	def show(self):
 		item=self.head
 		while item is not None:
 			if item.next is None:
@@ -24,4 +24,4 @@ llist.head.next=a
 a.next=b
 
 if __name__=='__main__':
-	llist.printlist()
+	llist.show()

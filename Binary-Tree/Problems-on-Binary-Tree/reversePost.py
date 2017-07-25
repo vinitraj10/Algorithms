@@ -1,4 +1,4 @@
-from ..package import BinaryTree
+from package import BinaryTree
 
 def preorder(root):
 	if not root :
