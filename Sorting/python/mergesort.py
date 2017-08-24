@@ -18,24 +18,32 @@ def merge(array,start,mid,end):
 	while i<nL and j<nR:
 		if leftArray[i]<=rightArray[j]:
 			array[k]=leftArray[i]
+			test.append(i+1)
 			i+=1
 		else:
 			array[k]=rightArray[j]
 			j+=1
+			test.append(nL+j+1)
 		k+=1
 	while i<nL:
 		array[k]=leftArray[i]
+		test.append(i+1)
 		i+=1
 		k+=1
 	while j<nR:
 		array[k]=rightArray[j]
+		test.append(nL+j+1)
 		j+=1
 		k+=1
 
 
-''' 
-	array = [int(x) for x in input().split()]
-	mergerSort(array,0,len(array)-1)
-	print(array)
-'''
+cost=[]
+test=[]
+for _ in range(int(input())):
+	t,s=[int(x) for x in input().split()]
+	rate = s/t
+	cost.append(rate)
+
+mergerSort(cost,0,len(cost)-1)
+print(test)
 
