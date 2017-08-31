@@ -14,6 +14,19 @@ class Graph:
 		for i in self.graph[source]:
 			if not self.visited[i]:
 				self.dfs(i)
+	def dfs_stack(self,source):
+		stack=[]
+		stack.append(source)
+		self.visited[source] = True
+		while stack:
+			top=stack.pop()
+			print(top)
+			for i in self.graph[top]:
+				if not self.visited[i]:
+					stack.append(i)
+					self.visited[i]=True
+
+
 
 
 g=Graph(4,5)
@@ -22,4 +35,4 @@ g.addEdge(1,3)
 g.addEdge(1,4)
 g.addEdge(3,4)
 g.addEdge(4,2)
-g.dfs(1)
+g.dfs_stack(1)
